@@ -125,19 +125,20 @@ body {
             }
         }
 
-        &:before, &:after {
+        &:before,
+        &:after {
             content: none;
         }
     }
 }
 
 @keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header {
@@ -261,7 +262,7 @@ footer {
         height: 35px;
         border-radius: 50%;
         border: 3px solid lighten($text, 25%);
-        text-align:center;
+        text-align: center;
     }
 
     i {
@@ -315,11 +316,11 @@ footer {
 }
 
 .shadow {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .heading {
@@ -371,7 +372,8 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
 
-    h1, h2 {
+    h1,
+    h2 {
         margin: 0;
     }
 
@@ -422,13 +424,13 @@ footer {
         height: 35px;
         border-radius: 50%;
         border: 3px solid lighten($base-color, 25%);
-        text-align:center;
+        text-align: center;
     }
 
     i {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: 5px;;
+        padding-top: 5px;
     }
 }
 
@@ -464,6 +466,11 @@ footer {
         color: $text;
         margin: 0;
     }
+}
+
+.profile-image img {
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.24);
 }
 
 /*
@@ -506,7 +513,11 @@ footer {
         width: 3px;
         height: 40px;
         background: $base-color;
-        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        background: linear-gradient(
+            to bottom,
+            $base-color,
+            rgba($base-color, 0)
+        );
         top: 100%;
         left: 303px;
     }
@@ -620,7 +631,8 @@ footer {
         margin: 0 0 15px 0;
     }
 
-    p, ul {
+    p,
+    ul {
         margin: 0;
         color: $text;
         font-size: 0.9em;
@@ -661,9 +673,12 @@ footer {
     float: left;
 }
 
+.project-image img {
+    max-width: 400px;
+}
 .project-info {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 10rem;
     transform: translateY(-50%);
     margin-left: 300px;
     padding: 15px;
@@ -751,7 +766,8 @@ footer {
     max-width: 500px;
     margin: 0 auto;
 
-    input, textarea {
+    input,
+    textarea {
         display: block;
         width: 100%;
         padding: 10px;
@@ -785,11 +801,12 @@ footer {
         border: none;
         color: $base-color;
         font-weight: 700;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         @include transition();
 
         &:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23);
         }
     }
 }
@@ -831,7 +848,8 @@ footer {
         margin: 0 0 15px 0;
     }
 
-    p, ul {
+    p,
+    ul {
         margin: 0 0 15px 0;
         color: $text;
         font-size: 0.9em;
@@ -850,12 +868,11 @@ footer {
 
 // Collapse timeline
 @media only screen and (max-width: 750px) {
-
     #experience-timeline {
-        &:before, &:after {
+        &:before,
+        &:after {
             left: 23px;
         }
-
     }
 
     .vtimeline-date {
@@ -874,12 +891,10 @@ footer {
     .vtimeline-content {
         margin-left: 70px;
     }
-
 }
 
 // Medium Devices
-@media only screen and (max-width : 992px) {
-
+@media only screen and (max-width: 992px) {
     #lead {
         height: auto;
         min-height: auto;
@@ -909,12 +924,10 @@ footer {
             text-align: left;
         }
     }
-
 }
 
 // Small Devices
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width: 768px) {
     header {
         position: fixed;
         display: none;
@@ -924,7 +937,8 @@ footer {
         height: 100%;
     }
 
-    #mobile-menu-open, #mobile-menu-close {
+    #mobile-menu-open,
+    #mobile-menu-close {
         display: block;
     }
 
@@ -960,7 +974,8 @@ footer {
     }
 
     .education-block {
-        h3, span {
+        h3,
+        span {
             float: none;
         }
     }
@@ -984,12 +999,10 @@ footer {
     .social {
         text-align: center;
     }
-
 }
 
 // Extra Small Devices
-@media only screen and (max-width : 480px) {
-
+@media only screen and (max-width: 480px) {
     #lead-content {
         h1 {
             font-size: 1.5em;
@@ -1004,5 +1017,4 @@ footer {
             padding: 5px 10px;
         }
     }
-
 }
