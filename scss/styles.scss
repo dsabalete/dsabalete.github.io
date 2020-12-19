@@ -556,7 +556,7 @@ footer {
 .vtimeline-point {
     position: relative;
     display: block;
-    vertical-align: top;
+    // vertical-align: top;
     margin-bottom: 30px;
 }
 
@@ -679,10 +679,6 @@ footer {
     &:hover {
         transform: scale(1.1);
     }
-}
-
-.project-image {
-    // float: left;
 }
 
 .project-image img {
@@ -936,10 +932,6 @@ footer {
             padding: 20px;
         }
     }
-
-    .project-info {
-        // background-color: yellow;
-    }
 }
 
 // Small Devices
@@ -996,10 +988,6 @@ footer {
         }
     }
 
-    .project {
-        // flex-direction: column;
-    }
-
     .project-image img {
         max-width: 400px;
     }
@@ -1008,8 +996,6 @@ footer {
         position: relative;
         margin: 0;
         padding: 30px;
-        // top: auto;
-        // transform: none;
     }
 
     footer {
