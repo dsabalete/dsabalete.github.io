@@ -650,7 +650,7 @@ footer {
 */
 
 #projects {
-    padding: 50px 15px;
+    padding: 50px 5px;
     border-bottom: 1px solid $border;
     text-align: center;
 
@@ -660,28 +660,44 @@ footer {
     }
 }
 
+.projects-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .project {
-    position: relative;
-    max-width: 900px;
+    // width: 90vw;
     margin: 0 auto 30px auto;
-    overflow: hidden;
-    background: #fff;
+    // overflow: hidden;
+    // background: #fff;
     border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: transform 0.2s; /* Animation */
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .project-image {
-    float: left;
+    // float: left;
 }
 
 .project-image img {
     max-width: 400px;
 }
+
 .project-info {
-    position: relative;
-    top: 10rem;
-    transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px;
+    // position: relative;
+    // top: 10rem;
+    // transform: translateY(-50%);
+    // margin-left: 300px;
+    border-left: 1px dashed #3498db;
+    margin-left: 20px;
+    width: 500px;
+    padding: 50px;
 
     h3 {
         font-size: 1.5em;
@@ -694,6 +710,15 @@ footer {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+        text-align: left;
+    }
+
+    .view-project {
+        float: left;
+    }
+
+    .view-demo {
+        float: right;
     }
 }
 
@@ -701,7 +726,7 @@ footer {
     .project-info {
         position: relative;
         margin: 0;
-        padding: 30px 15px;
+        padding: 30px;
         transform: none;
     }
 }
@@ -866,33 +891,6 @@ footer {
     -----------------------------
 */
 
-// Collapse timeline
-@media only screen and (max-width: 750px) {
-    #experience-timeline {
-        &:before,
-        &:after {
-            left: 23px;
-        }
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px;
-    }
-
-    .vtimeline-icon {
-        margin-left: 0;
-    }
-
-    .vtimeline-content {
-        margin-left: 70px;
-    }
-}
-
 // Medium Devices
 @media only screen and (max-width: 992px) {
     #lead {
@@ -923,6 +921,24 @@ footer {
         p {
             text-align: left;
         }
+    }
+
+    .project.shadow-large {
+        display: flex;
+        flex-direction: row;
+
+        .project-image img {
+            width: 300px;
+        }
+
+        .project-info {
+            width: 300px;
+            padding: 20px;
+        }
+    }
+
+    .project-info {
+        // background-color: yellow;
     }
 }
 
@@ -980,16 +996,20 @@ footer {
         }
     }
 
-    .project-image {
-        display: none;
+    .project {
+        // flex-direction: column;
+    }
+
+    .project-image img {
+        max-width: 400px;
     }
 
     .project-info {
         position: relative;
         margin: 0;
-        padding: 30px 15px;
-        top: auto;
-        transform: none;
+        padding: 30px;
+        // top: auto;
+        // transform: none;
     }
 
     footer {
@@ -998,6 +1018,50 @@ footer {
 
     .social {
         text-align: center;
+    }
+}
+
+// Collapse timeline
+@media only screen and (max-width: 750px) {
+    #experience-timeline {
+        &:before,
+        &:after {
+            left: 23px;
+        }
+    }
+
+    .vtimeline-date {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: 70px;
+    }
+
+    .vtimeline-icon {
+        margin-left: 0;
+    }
+
+    .vtimeline-content {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .project.shadow-large {
+        display: flex;
+        flex-direction: column;
+
+        .project-image img,
+        .project-info {
+            width: 80vw;
+            max-width: 500px;
+        }
+
+        .project-info {
+            border-left: none;
+        }
     }
 }
 
