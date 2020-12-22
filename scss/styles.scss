@@ -242,59 +242,6 @@ footer {
     padding: 50px 0;
 }
 
-.copyright {
-    padding-top: 20px;
-
-    p {
-        margin: 0;
-        color: $text;
-    }
-}
-
-.top {
-    text-align: center;
-
-    span {
-        cursor: pointer;
-        display: block;
-        margin: 15px auto 0 auto;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 3px solid lighten($text, 25%);
-        text-align: center;
-    }
-
-    i {
-        color: $text;
-    }
-}
-
-.social {
-    text-align: right;
-
-    ul {
-        margin: 5px 0 0 0;
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        font-size: 1.25em;
-        list-style: none;
-    }
-
-    a {
-        display: block;
-        color: $text;
-        padding: 10px;
-
-        &:hover {
-            color: $base-color;
-        }
-    }
-}
-
 .btn-rounded-white {
     display: inline-block;
     color: #fff;
@@ -481,7 +428,7 @@ footer {
 
 #experience {
     padding: 50px 15px;
-    text-align: center;
+    // text-align: center;
     border-bottom: 1px solid $border;
 
     h2 {
@@ -597,7 +544,7 @@ footer {
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
-    text-align: center;
+    // text-align: center;
 
     h2 {
         color: $heading;
@@ -652,7 +599,7 @@ footer {
 #projects {
     padding: 50px 5px;
     border-bottom: 1px solid $border;
-    text-align: center;
+    // text-align: center;
 
     h2 {
         color: $heading;
@@ -660,13 +607,8 @@ footer {
     }
 }
 
-.projects-list {
-    display: flex;
-    flex-direction: column;
-}
-
 .project {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 3.2rem auto;
     border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
@@ -698,16 +640,24 @@ footer {
     p {
         color: $text;
         margin: 0 0 15px 0;
-        font-size: 0.9em;
+        font-size: 1em;
         text-align: left;
     }
 
+    a:hover {
+        font-weight: bolder;
+    }
+
     .view-project {
+        color: #3498db;
         float: left;
+        font-size: 0.9em;
     }
 
     .view-demo {
+        color: #3498db;
         float: right;
+        font-size: 0.9em;
     }
 }
 
@@ -732,7 +682,6 @@ footer {
 
 #skills {
     padding: 50px 15px;
-    text-align: center;
 
     h2 {
         color: $heading;
@@ -767,7 +716,7 @@ footer {
 #contact {
     padding: 50px 15px;
     background: $base-color;
-    text-align: center;
+    // text-align: center;
 
     h2 {
         margin: 0 0 15px 0;
@@ -905,7 +854,7 @@ footer {
     }
 
     #about {
-        text-align: center;
+        // text-align: center;
 
         p {
             text-align: left;
