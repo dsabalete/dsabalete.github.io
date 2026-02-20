@@ -10,6 +10,8 @@
     portfolio website.
 */
 
+import $ from 'jquery'
+
 (function($) {
 
     // Remove no-js class
@@ -21,8 +23,13 @@
         // Treat as normal link if no-scroll class
         if ($(this).hasClass('no-scroll')) return;
 
-        e.preventDefault();
         var heading = $(this).attr('href');
+npm 
+        if (!heading || heading.charAt(0) !== '#') return;
+
+        if (!$(heading).length) return;
+
+        e.preventDefault();
         var scrollDistance = $(heading).offset().top;
 
         $('html, body').animate({
@@ -48,32 +55,6 @@
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
         }, 500);
-    });
-
-    // Create timeline
-    $('#experience-timeline').each(function() {
-
-        $this = $(this); // Store reference to this
-        $userContent = $this.children('div'); // user content
-
-        // Create each timeline block
-        $userContent.each(function() {
-            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
-        });
-
-        // Add icons to each block
-        $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
-        });
-
-        // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function() {
-            var date = $(this).data('date');
-            if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
-            }
-        });
-
     });
 
     // Open mobile menu
