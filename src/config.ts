@@ -1,271 +1,101 @@
 export const siteConfig = {
-  name: "David Sabalete",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of David Sabalete",
+  name: "David Sabalete Rodríguez",
+  title: "Senior Full Stack Developer",
+  description:
+    "Portfolio website of David Sabalete Rodríguez, Senior Full Stack Developer specializing in Vue.js, Nuxt.js and performant web applications.",
   accentColor: "#1d4ed8",
   social: {
-    email: "dsabalete@gmail.com",
+    email: "info@davidsabalete.com",
     linkedin: "https://linkedin.com/in/dsabalete",
-    twitter: "https://x.com/dsabalete",
     github: "https://github.com/dsabalete",
   },
   aboutMe:
-    `I am an experienced Senior Fullstack Developer specializing in Vue.js and Nuxt.js, delivering high-quality, performant, and thoroughly tested code for clients worldwide. My expertise in modern JavaScript frameworks ensures scalable and maintainable web applications.
-I focus on solving complex problems, not just technical challenges but creating exceptional user experiences that are both visually stunning and fully accessible.By combining powerful tools with deep user understanding, I bring interfaces to life that are not only beautiful but also inclusive and functional.
-I am a collaborative team player who thrives in environments where we can learn from each other and grow together.As a fast learner with a growth mindset, I constantly seek new challenges and opportunities to expand my skills as a fullstack developer, staying current with emerging technologies and best practices.
-Currently available for remote international projects in frontend and fullstack technologies.`,
-  skills: ["Javascript", "Vue.js", "React", "Node.js", "AWS", "Docker"],
+    "Senior Full Stack Developer with 20+ years building performant, accessible web applications using Vue.js, Nuxt.js, and modern JavaScript. I specialize in translating complex requirements into elegant, user-centered interfaces that scale. I have reduced initial load times by up to 45%, helped teams reach 90+ Lighthouse performance scores, increased test coverage from 45% to over 80%, and created reusable component libraries adopted across multiple teams.",
+  skills: [
+    "Vue.js", "Nuxt.js", "React", "Svelte", "TypeScript", "Node.js", "AWS",
+    "Testing", "Web Accessibility", "Technical Leadership",
+  ],
   projects: [
-    {
-      image: "/gym_tracker.png",
-      name: "Gym Tracker",
-      description:
-        "A modern web application for tracking gym workouts, built with Nuxt 4, Vue 3, TailwindCSS, and Firebase",
-      link: "https://github.com/dsabalete/gym-app",
-      skills: ["nuxt", "tailwind", "firebase"]
-    },
-    {
-      image: "/tercerespai.png",
-      name: "Tercer Espai website",
-      description:
-        "Tercer Espai is a web built with Nuxt.js, Tailwind and Supabase. It allows users to know about the events organized by the organization Tercer Espai, get in touch with the organization and get the latest news.",
-      link: "",
-      skills: ["nuxt", "tailwind", "supabase"]
-    },
-    {
-      image: "/system-monitor.png",
-      name: "System Monitor",
-      description:
-        "System Monitor is a web application for monitoring system resources, built with Node, Express and vanilla javascript.",
-      link: "https://github.com/dsabalete/system-monitor",
-      skills: ["node", "express", "vanillajs"]
-    },
-    {
-      image: "/goat-notes.png",
-      name: "Goat Notes taking app with AI",
-      description:
-        "GOAT Notes is a modern note-taking application built with Next.js, Supabase, and Prisma. It allows users to create, edit, delete, and search notes, with additional features like AI-powered insights and a responsive design.",
-      link: "https://github.com/dsabalete/fcc-goat-notes",
-      skills: ["next", "supabase", "prisma"]
-    },
-    /*
-    {
-      image: "/qrcode.png",
-      name: "QR Code Generator",
-      description:
-        "Webapp tool for generating QR Codes from valid URLs. Static Astro website with Cloudfare Worker to generate the image.",
-      link: "https://github.com/dsabalete/qr-code",
-      skills: ["astro", "cloudflare"]
-    },
-    {
-      image: "/space-tourism.png",
-      name: "Space tourism",
-      description:
-        "A website for a space tourism company. It is a static website with responsive design, plain CSS and a bit of vanilla javascript.",
-      link: "https://github.com/dsabalete/space-tourism",
-      skills: ["html", "css", "javascript"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/creualta.png",
-      name: "Creu Alta website",
-      description: `Creu Alta Sabadell Basket website. It is running on Drupal as CMS an it has a VueJS app to register players during summer and christmas campus.`,
-      link: "",
-      skills: ["drupal", "vue"]
-    },
-    {
-      image: "/kiloday.png",
-      name: "Kiloday calculator",
-      description: "Alternative birthday calculator app made with Vue, Vite and Pinia",
-      link: "https://github.com/dsabalete/kiloday",
-      skills: ["vue", "vite", "pinia"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/my-1-rm.png",
-      name: "My 1 RM website",
-      description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
-      link: "https://github.com/dsabalete/my-1-rm",
-      skills: ["nuxt", "netlify"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/vue-twitter-clone.png",
-      name: "Vue twitter clone",
-      description: "App that emulates basic functionality of a Twitter app. Made with Vue and deployed on Heroku.",
-      link: "https://github.com/dsabalete/vue-twitter-clone",
-      skills: ["vue", "heroku"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/expensify.png",
-      name: "Expensify App",
-      description: "App that helps keep you track of your expenses. Made with React and Firebase.",
-      link: "https://github.com/dsabalete/udemy-expensify-app",
-      skills: ["react", "firebase", "heroku"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/indecision.png",
-      name: "Indecision App",
-      description: "Put your live in the hands of a computer. Made with React.",
-      link: "https://github.com/dsabalete/udemy-indecision-app",
-      skills: ["react", "heroku"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/portfolio.png",
-      name: "Gridsome-Portfolio",
-      description: "My Portfolio made with Gridsome and ❤️",
-      link: "https://github.com/dsabalete/gridsome-portfolio",
-      skills: ["gridsome"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/calculator.png",
-      name: "ReactJS Calculator",
-      description: `ReactJS Calculator made with React.js. It has a simple calculator with a few functions.`,
-      link: "https://codepen.io/dsabalete/full/yZrxzP",
-      skills: ["react", "codepen"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/drum_machine.png",
-      name: "Drum machine",
-      description: `React and Redux Drum machine made with React and Redux.`,
-      link: "https://codepen.io/dsabalete/full/bzQEqQ",
-      skills: ["react", "redux", "codepen"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/markdown.png",
-      name: "Markdown previewer",
-      description: `Markdown previewer made with React.js and Redux`,
-      link: "https://codepen.io/dsabalete/full/daqqBQ",
-      skills: ["react", "redux", "codepen", "markdown"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/pomodoro.png",
-      name: "Pomodoro clock",
-      description: `Pomodoro clock made with React.js and Redux`,
-      link: "https://codepen.io/dsabalete/full/MLNQvQ",
-      skills: ["react", "redux", "codepen"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/quote_machine.png",
-      name: "Quote Machine",
-      description: "Random Quote Machine using external API",
-      link: "https://codepen.io/dsabalete/full/QdYLOZ",
-      skills: ["react", "codepen"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/tribute_page.png",
-      name: "Bruce Lee tribute page",
-      description: "Simple Tribute page made with Bootstrap",
-      link: "https://codepen.io/dsabalete/full/aBPxzB",
-      skills: ["bootstrap", "codepen"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/weather.png",
-      name: "Weather app",
-      description: "Forecast Weather App using JQuery and OpenWeatherMap API",
-      link: "https://codepen.io/dsabalete/full/RKvqjJ",
-      skills: ["jquery", "codepen"]
-    },
-    {
-      image: "https://dsabalete.github.io/images/wikipedia_viewer.png",
-      name: "Wikipedia viewer",
-      description: "Wikipedia Viewer App made with Angular and Wikipedia API",
-      link: "https://codepen.io/dsabalete/full/OpRKEZ",
-      skills: ["angular", "codepen", "wikipedia"]
-    }
-    */
+    { name: "Gym Tracker", description: "Workout tracking application built with Nuxt 4, Vue 3, TailwindCSS and Firebase. Performance: 98, Accessibility: 100.", link: "https://github.com/dsabalete/gym-app", skills: ["Nuxt 4", "Vue 3", "TailwindCSS", "Firebase"] },
+    { name: "GOAT Notes (AI)", description: "AI-powered note-taking application built with Next.js, Supabase and Prisma. Performance: 92, Accessibility: 95.", link: "https://github.com/dsabalete/fcc-goat-notes", skills: ["Next.js", "Supabase", "Prisma"] },
+    { name: "Tercer Espai", description: "CMS-driven events platform built with Nuxt.js, Tailwind and Supabase.", link: "", skills: ["Nuxt.js", "Tailwind", "Supabase"] },
+    { name: "Foto Uploader", description: "Serverless image upload application.", link: "", skills: ["Vanilla JS", "CSS", "Netlify Functions"] },
+    { name: "QR Code Generator", description: "Serverless QR code generation tool.", link: "", skills: ["Astro", "Cloudflare Workers"] },
+    { name: "Space Tourism", description: "Responsive static website for a space tourism company.", link: "", skills: ["HTML", "CSS", "JavaScript"] },
+    { name: "Creu Alta Basket", description: "CMS website with a Vue.js registration application.", link: "", skills: ["Drupal", "Vue.js"] },
+    { name: "Kiloday Calculator", description: "Alternative birthday calculator.", link: "", skills: ["Vue", "Vite", "Pinia"] },
+    { name: "My 1 RM", description: "One-rep max calculator for training sessions.", link: "", skills: ["Nuxt", "Netlify"] },
+    { name: "System Monitor", description: "System resource monitoring application.", link: "https://github.com/dsabalete/system-monitor", skills: ["Node.js", "Express", "Vanilla JS"] },
   ],
   experience: [
     {
-      company: "LoveToKnow Media",
-      title: "Senior Software Engineer",
-      dateRange: "Nov 2019 - Jan 2026",
+      company: "Allianz Technology", title: "Senior Frontend Developer", dateRange: "Apr 2026 - Jul 2026",
       bullets: [
-        "Frontend task with Vue.js in the YourDictionary.com team.",
-        "Creation of new features, enforcing best practices and working in an agile environment in a decentralized international team.",
+        "Developed Svelte-based frontend modules for Meine Allianz, serving 2M+ insurance customers across Germany.",
+        "Reduced the feature delivery cycle by 30% through improved component architecture and code review processes in a cross-functional international team.",
+        "Used Claude AI as a coding accelerator to implement features and generate Vitest unit tests, achieving 85%+ coverage on critical user flows while shipping changes 2x faster.",
       ],
     },
     {
-      company: "Edreams ODIGEO",
-      title: "Frontend Developer",
-      dateRange: "Apr 2018 – Oct 2019",
+      company: "LoveToKnow Media Spain", title: "Senior Full Stack Developer", dateRange: "Nov 2019 - Jan 2026",
       bullets: [
-        "Frontend development in Backbone, unit testing with Karma, functional testing with Gherkin on Jenkins, and Testing AB of beta versions.",
-        "Created reusable components increasing development speed by 40%.",
-        "Code reviews across teams including React and backend Java code.",
+        "Led frontend architecture for YourDictionary.com (45M+ monthly visitors) using Vue.js, Nuxt.js and an AWS serverless stack with Lambda, API Gateway and DynamoDB.",
+        "Improved Lighthouse performance from 55 to 92+, reducing Largest Contentful Paint by 60% through code splitting, lazy loading and image optimization.",
+        "Built a shared library of 40+ reusable Vue components adopted by 3 product teams.",
+        "Increased automated unit test coverage from 30% to 78%, catching 95% of regressions before deployment.",
+        "Built a Cypress E2E test suite covering 40+ critical user journeys, reducing manual QA regression time by 70%.",
+        "Drove the Nuxt 2 to Nuxt 3 migration across 5 micro-frontends with zero downtime.",
+        "Championed CodeRabbitAI for automated PR reviews, reducing review turnaround time by 40%.",
       ],
     },
     {
-      company: "Capitole Consulting",
-      title: "Frontend Developer",
-      dateRange: "Oct 2017 – Apr 2018",
+      company: "EDREAMS Odigeo", title: "Senior Frontend Developer", dateRange: "Apr 2018 - Oct 2019",
       bullets: [
-        "Frontend development in Backbone, jQuery and Lodash for a client in the travel agency sector in Barcelona.",
+        "Owned frontend quality for a high-traffic travel booking platform processing 10M+ searches daily.",
+        "Built an automated testing pipeline with Karma, Gherkin and Jenkins, reducing production bugs by 40%.",
+        "Maintained 85%+ test coverage across Backbone and React codebases.",
+        "Led A/B testing framework implementation, shipping 20+ experiments that improved conversion by 12%.",
+        "Introduced BrowserStack visual regression testing and reviewed code across 6 frontend teams.",
       ],
     },
     {
-      company: "Capitole Consulting",
-      title: "Analyst Programmer",
-      dateRange: "Jul 2017 – Dec 2017",
+      company: "CAPITOLE CONSULTING", title: "Senior Frontend Developer & Test Automation Engineer", dateRange: "Jul 2016 - Apr 2018",
       bullets: [
-        "Migration of application to responsive web format and Single Page Application (AngularJS) for a client in the banking sector in Sant Cugat del Vallès.",
+        "Developed interactive booking interfaces for a major travel agency platform, reducing page load time by 35%.",
+        "Designed a TestComplete and Jenkins test suite that cut pharmaceutical compliance regression testing from 3 days to 4 hours, achieving 92% automation coverage across 200+ test cases.",
+        "Architected the migration of a legacy banking application to a responsive AngularJS SPA, reducing page load times by 50% and enabling mobile access for field agents.",
       ],
     },
     {
-      company: "Capitole Consulting",
-      title: "Test Automation Engineer",
-      dateRange: "Jan 2017 – Oct 2017",
+      company: "FIATC Seguros", title: "Web Developer", dateRange: "Jun 2003 - Jul 2016",
       bullets: [
-        "Implementation of automatic testing with Test Complete and Jenkins for a client in the pharmaceutical sector in Parets del Vallès.",
+        "Designed and built the online insurance sales platform handling 15K+ policies per year across travel assistance and motor insurance.",
+        "Streamlined the quote-to-purchase flow, reducing drop-off by 25% and transaction time from 8 to 3 minutes.",
       ],
     },
     {
-      company: "FIATC Seguros",
-      title: "Web Developer & Java Programmer",
-      dateRange: "Jun 2003 – Jul 2016",
+      company: "Institut Català de Tecnologia", title: "Web Developer", dateRange: "Jun 2001 - May 2003",
       bullets: [
-        "Implementation of the frontend web for charging and contracting insurance applications in travel assistance and car insurance.",
-        "Java, Struts, Spring, Hibernate and IBM DB2 were the main technologies used in the development of the applications.",
+        "Maintained the public web portal and 3 internal web applications, ensuring 99.5% uptime.",
+        "Built an XML/XSLT publishing pipeline reducing content publication time from 2 days to 4 hours.",
       ],
     },
     {
-      company: "Institut Català de Tecnologia",
-      title: "Web Developer & Java Programmer",
-      dateRange: "Jun 2001 – May 2003",
+      company: "Secretariaplus.com", title: "Web Developer", dateRange: "Apr 2000 - May 2001",
       bullets: [
-        "Maintaining the web portal of the organization (XML + XSL + Oracle with Cocoon) and other applications (Struts).",
-      ],
-    },
-    {
-      company: "Secretariaplus",
-      title: "Web Developer",
-      dateRange: "Apr 2000 – May 2001",
-      bullets: [
-        "Web development with ASP, accessing a Microsoft SQL Server database with intensive use of HTML and JavaScript.",
+        "Developed and maintained an ASP-based web application with SQL Server managing 10K+ client records.",
+        "Built data-entry interfaces that reduced processing time by 40% for administrative staff.",
       ],
     },
   ],
   education: [
-    {
-      school: "Coursera",
-      degree: "Google Professional Certificate in Data Analytics",
-      dateRange: "Dec 2022 - May 2023",
-      achievements: [
-        "Data Analytics Certificate",
-      ],
-    },
-    {
-      school: "Institut Català de Tecnología",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2001 -  2002",
-      achievements: [
-        "Master Degree in E-Business Technologies",
-      ],
-    },
-    {
-      school: "Universitat Politècnica de Catalunya",
-      degree: "Degree in Industrial Technical Engineering - Electronics specialty",
-      dateRange: "1995 - 2000",
-      achievements: [
-        "Degree in Industrial Technical Engineering - Electronics specialty",
-      ],
-    },
+    { school: "Coursera", degree: "Google Data Analyst Certificate", dateRange: "Nov 2022 - Jun 2023", achievements: [] },
+    { school: "Institut Català de Tecnologia", degree: "E-business Technologies (Master's)", dateRange: "Oct 2001 - May 2002", achievements: [] },
+    { school: "Universitat Politècnica de Catalunya", degree: "Industrial Technical Engineering (Electronic specialty)", dateRange: "Sep 1995 - Jun 1999", achievements: [] },
   ],
+  certifications: [
+    "Full Stack Open Containers — MOOC.fi", "Continuous Integration — MOOC.fi", "React Native — University of Helsinki", "GraphQL — University of Helsinki", "TypeScript — University of Helsinki", "Mastering TypeScript 2024 — Udemy", "Google Data Analytics — Google/Credly", "Test Driven Development (JavaScript & Jest) — Udemy", "Intermediate Python — DataCamp", "Introduction to Python — DataCamp", "Python Data Science Toolbox — DataCamp", "The Software Architect Code — edX", "Bootstrap — edX", "Linux Foundation LFS101x (Intro to Linux) — edX", "HTML5 Part 1: Coding Essentials & Best Practices — edX", "HTML5 Part 2: Advanced Techniques & Best Practices — edX", "Programación Javascript — MiriadaX", "Cloud Services (HTML5, JavaScript, Node.js) — MiriadaX", "HTML5 CSS Javascript — MiriadaX", "Agilidad y Lean — MiriadaX", "Deutsch Lernen Nicos Weg A1 — DW",
+  ],
+  languages: ["Spanish — Native", "Catalan — Native", "English — Professional proficiency", "German — Basic (A1)"],
+  interests: ["Building side projects to explore Vue, Nuxt, Astro and AI integration", "Strength training and fitness", "Reading literature and technical books", "Camping and outdoor activities"],
 };

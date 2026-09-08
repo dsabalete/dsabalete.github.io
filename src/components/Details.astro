@@ -1,0 +1,35 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="details" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+    <div class="lg:col-span-4">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">More</h2>
+      <div class="w-[75px] h-[5px] mt-2 rounded-full" style={`background-color: ${siteConfig.accentColor}`} />
+    </div>
+
+    <div class="lg:col-span-8 space-y-10">
+      <div>
+        <h3 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">Certifications</h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-600">
+          {siteConfig.certifications.map((cert) => <li class="text-sm sm:text-base">{cert}</li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">Languages</h3>
+        <ul class="space-y-2 text-gray-600">
+          {siteConfig.languages.map((language) => <li>{language}</li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">Interests</h3>
+        <ul class="space-y-2 text-gray-600">
+          {siteConfig.interests.map((interest) => <li>{interest}</li>)}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
